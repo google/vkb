@@ -1,7 +1,7 @@
 use_relative_paths = True
 
 vars = {
-  'google_git':  'https://github.com/google',
+  'google_git': 'https://github.com/google',
   'gtruc_git': 'https://github.com/g-truc',
   'leethomason_git': 'https://github.com/leethomason',
   'khronos_git': 'https://github.com/KhronosGroup',
@@ -14,7 +14,7 @@ vars = {
   'shaderc_revision': '65adcb504d024bb29f0ad8279b6a215d5f679832',
   'spirv_cross_revision': 'e5d3a6655e13870a6f38f40bd88cc662b14e3cdf',
   'spirv_headers_revision': 'af64a9e826bf5bb5fcd2434dd71be1e41e922563',
-  'spirv_tools_revision': '1b6fd37fa6f9c39be15d2e775948a6708afecb7c',
+  'spirv_tools_revision': '964dc52df539836612ea9a0557a1eadd6294a2f1',
   'tinyxml2_revision': 'cc1745b552dd12bb1297a99f82044f83b06729e0',
   'vulkan_docs_revision': 'a5b10770a313a4b1fcf74645c6041c6090630085',
   'vulkan_headers_revision': 'e3f96a9ccab9397481eb81c4d9bce4ea7590dc33',
