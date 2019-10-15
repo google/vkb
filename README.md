@@ -47,4 +47,4 @@ set to off. (e.g. SPIRV-Tools enables SPIRV-Headers by default).
 
 Please see the [CONTRIBUTING.md](/CONTRIBUTING.md) and
 [CODE_OF_CONDUCT.md](/CODE_OF_CONDUCT.md) files on how to contribute
-to Amber.
+to VKB.
