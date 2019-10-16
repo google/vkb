@@ -37,7 +37,7 @@ option(VKB_BUILD_SPIRV_TOOLS "Build SPIRV-Tools" ON)
 option(VKB_BUILD_SPIRV_DOCS "Build SPIR-V docs" ON)
 option(VKB_BUILD_VULKAN_DOCS "Build Vulkan-Docs" ON)
 option(VKB_BUILD_VULKAN_HEADERS "Build Vulkan-Headers" ON)
-option(VKB_BUILD_VULKAN_HPP "Build Vulkan-HPP" ON)
+option(VKB_BUILD_VULKAN_HPP "Build Vulkan-Hpp" ON)
 option(VKB_BUILD_VULKAN_LOADER "Build Vulkan-Loader" ON)
 option(VKB_BUILD_VULKAN_VALIDATION_LAYERS "Build Vulkan-ValidationLayers" ON)
 
@@ -88,7 +88,7 @@ set(VKB_VULKAN_LOADER_SOURCE_DIR "${VKB_THIRD_PARTY}/vulkan-loader")
 set(VKB_VULKAN_VALIDATION_LAYERS_SOURCE_DIR "${VKB_THIRD_PARTY}/vulkan-validationlayers")
 
 find_package(PythonInterp 3 REQUIRED)
-message(STATUS "VKB using python3")
+message(STATUS "VKB using Python3")
 
 message(STATUS "VKB enable testing: ${VKB__BUILD_TESTS}")
 message(STATUS "VKB enable SPIRV-Docs: ${VKB_BUID_SPIRV_DOCS}")
@@ -102,6 +102,23 @@ message(STATUS "VKB enable Vulkan-Headers: ${VKB_BUILD_VULKAN_HEADERS}")
 message(STATUS "VKB enable Vulkan-Hpp: ${VKB_BUILD_VULKAN_HPP}")
 message(STATUS "VKB enable Vulkan-Loader: ${VKB_BUILD_VULKAN_LOADER}")
 message(STATUS "VKB enable Vulkan-ValidationLayers: ${VKB_BUILD_VULKAN_VALIDATION_LAYERS}")
+
+if(MSVC)
+  # By default compile code to assume the CRT is statically linked,
+  # i.e. use /MT* options.  For debug builds use /MTd, and for release builds
+  # use /MT.
+  #
+  # Modify the project-wide options variables. This is ugly, but seems to be
+  # the state of the art.
+  message(STATUS "VKB: Static C runtime selected: replacing /MD* with /MT*")
+  foreach (flag_var
+     CMAKE_C_FLAGS CMAKE_C_FLAGS_DEBUG CMAKE_C_FLAGS_RELEASE
+     CMAKE_C_FLAGS_MINSIZEREL CMAKE_C_FLAGS_RELWITHDEBINFO
+     CMAKE_CXX_FLAGS CMAKE_CXX_FLAGS_DEBUG CMAKE_CXX_FLAGS_RELEASE
+     CMAKE_CXX_FLAGS_MINSIZEREL CMAKE_CXX_FLAGS_RELWITHDEBINFO)
+    string(REPLACE "/MD" "/MT" ${flag_var} "${${flag_var}}")
+  endforeach()
+endif()
 
 # Support
 if (${VKB_BUILD_TESTS})
@@ -137,7 +154,7 @@ endif()
 if (${VKB_BUILD_VULKAN_HEADERS})
   include(cmake/vulkan-headers.cmake)
 endif()
-# TODO(dsinclair): Get Vulkan HPP working
+# TODO(dsinclair): Get Vulkan-Hpp working
 #if (${VKB_BUILD_VULKAN_HPP})
 #  include(cmake/vulkan-hpp.cmake)
 #endif()

@@ -20,4 +20,13 @@ else()
   set(BUILD_TESTS OFF)
 endif()
 
+# The Vulkan-Loader CMake file assumes that this directory exists if
+# Wayland support is to be built.
+if(NOT EXISTS ${WAYLAND_CLIENT_INCLUDE_DIR})
+  message(STATUS "VKB: Disabling Wayland support in Vulkan-Loader")
+  set(BUILD_WSI_WAYLAND_SUPPORT OFF CACHE BOOL "" FORCE)
+endif()
+message(STATUS "VKB: Disabling X11 support in Vulkan-Loader")
+set(BUILD_WSI_XLIB_SUPPORT OFF CACHE BOOL "" FORCE)
+
 add_subdirectory(${VKB_VULKAN_LOADER_SOURCE_DIR})

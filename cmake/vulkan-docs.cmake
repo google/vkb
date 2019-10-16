@@ -14,23 +14,29 @@
 
 message(STATUS "VKB Vulkan-Docs: ${VKB_VULKAN_DOCS_SOURCE_DIR}")
 
-SET(SPEC ${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-docs/html/vkspec.html)
-SET(KATEX ${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-docs/katex)
+find_program(ASCIIDOCTOR asciidoctor)
 
-add_custom_command(
-  OUTPUT ${SPEC}
-  COMMAND ./makeAllExts OUTDIR=${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-docs html
-  WORKING_DIRECTORY ${VKB_THIRD_PARTY}/vulkan-docs
-  COMMENT "Building Vulkan Docs"
-  VERBATIM
-)
-add_custom_target(vk-docs ALL DEPENDS ${SPEC})
+if (NOT ASCIIDOCTOR)
+  message(STATUS "VKB Vulkan-Docs: asciidoctor not found, skipping")
+else()
+  SET(SPEC ${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-docs/html/vkspec.html)
+  SET(KATEX ${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-docs/katex)
 
-install(
-  FILES ${SPEC}
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/share/vulkan/docs
-)
-install(
-  DIRECTORY ${KATEX}
-  DESTINATION ${CMAKE_INSTALL_PREFIX}/share/vulkan/
-)
+  add_custom_command(
+    OUTPUT ${SPEC}
+    COMMAND ./makeAllExts OUTDIR=${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-docs html
+    WORKING_DIRECTORY ${VKB_THIRD_PARTY}/vulkan-docs
+    COMMENT "Building Vulkan Docs"
+    VERBATIM
+  )
+  add_custom_target(vk-docs ALL DEPENDS ${SPEC})
+
+  install(
+    FILES ${SPEC}
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/vulkan/docs
+  )
+  install(
+    DIRECTORY ${KATEX}
+    DESTINATION ${CMAKE_INSTALL_PREFIX}/share/vulkan/
+  )
+endif()
