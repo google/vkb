@@ -8,10 +8,10 @@ vars = {
 
   'effcee_revision': '6527fb25482ee16f0ae8c735d1d0c33f7d5f220a',
   'glm_revision': '4ff530b2a5af9ee2447b50404ac9d13a4c5f1e40',
-  'glslang_revision': 'b03e4fc4e072c997b19e4425a0a8fc3c5b280685',
+  'glslang_revision': 'a959deb00750826fb087171d663947df550a3339',
   'googletest_revision': '33a0d4f6d76a0ed6061e612848532cba82d42870',
   're2_revision': '5bd613749fd530b576b890283bfb6bc6ea6246cb',
-  'shaderc_revision': '65adcb504d024bb29f0ad8279b6a215d5f679832',
+  'shaderc_revision': '50d89019658e0876112e70bb41e14d61c0d49013',
   'spirv_cross_revision': 'e5d3a6655e13870a6f38f40bd88cc662b14e3cdf',
   'spirv_headers_revision': 'af64a9e826bf5bb5fcd2434dd71be1e41e922563',
   'spirv_tools_revision': '964dc52df539836612ea9a0557a1eadd6294a2f1',
