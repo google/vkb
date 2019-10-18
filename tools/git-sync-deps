@@ -38,11 +38,12 @@ Git Config:
 """
 
 
-from builtins import bytes
 import os
+import re
 import subprocess
 import sys
 import threading
+from builtins import bytes
 
 
 def git_executable():
@@ -174,7 +175,12 @@ def git_checkout_to_directory(git, repo, checkoutable, directory, verbose):
 
 def parse_file_to_dict(path):
   dictionary = {}
-  exec(compile(open(path).read(), path, 'exec'), dictionary)
+  contents = open(path).read()
+  # Need to convert Var() to vars[], so that the DEPS is actually Python. Var()
+  # comes from Autoroller using gclient which has a slightly different DEPS
+  # format.
+  contents = re.sub(r"Var\((.*?)\)", r"vars[\1]", contents)
+  exec(contents, dictionary)
   return dictionary
 
 
