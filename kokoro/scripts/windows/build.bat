@@ -60,9 +60,9 @@ echo "Build Completed %DATE% %TIME%"
 :: #########################################
 :: Run the tests
 :: ##########################################
-::echo "Running ctest... %DATE% %TIME%"
-::ctest
-::if %ERRORLEVEL% GEQ 1 exit /b %ERRORLEVEL%
-::echo "ctest Completed %DATE% %TIME%"
+echo "Running ctest... %DATE% %TIME%"
+ctest -E "vk_.*_validation_tests"
+if %ERRORLEVEL% GEQ 1 exit /b %ERRORLEVEL%
+echo "ctest Completed %DATE% %TIME%"
 
 exit /b %ERRORLEVEL%

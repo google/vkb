@@ -75,7 +75,7 @@ echo $(date): Build everything...
 ninja
 echo $(date): Build completed.
 
-#echo $(date): Starting ctest...
-#ctest
-#echo $(date): ctest completed.
+echo $(date): Starting ctest...
+ctest -E "vk_.*_validation_tests"
+echo $(date): ctest completed.
 
