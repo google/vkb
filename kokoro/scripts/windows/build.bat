@@ -61,7 +61,7 @@ echo "Build Completed %DATE% %TIME%"
 :: Run the tests
 :: ##########################################
 echo "Running ctest... %DATE% %TIME%"
-ctest -E "vk_.*_validation_tests"
+ctest -E "vk_.*_validation_tests|spirv-cross-test-no-opt|spirv-cross-test-metal-opt"
 if %ERRORLEVEL% GEQ 1 exit /b %ERRORLEVEL%
 echo "ctest Completed %DATE% %TIME%"
 

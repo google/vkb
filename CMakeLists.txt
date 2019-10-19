@@ -146,6 +146,8 @@ if (${VKB_BUILD_SHADERC})
   include(cmake/shaderc.cmake)
 endif()
 
+# Must come after spirv-tools and glslang as it uses the generated binaries
+# to setup testing.
 if (${VKB_BUILD_SPIRV_CROSS})
   include(cmake/spirv-cross.cmake)
 endif()

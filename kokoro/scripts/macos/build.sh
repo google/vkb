@@ -45,5 +45,5 @@ ninja
 echo $(date): Build completed.
 
 echo $(date): Starting ctest...
-ctest -E "vk_.*_validation_tests"
+ctest -E "vk_.*_validation_tests|spirv-cross-test-no-opt|spirv-cross-test-metal-opt"
 echo $(date): ctest completed.

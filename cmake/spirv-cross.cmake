@@ -20,4 +20,13 @@ else()
   set(SPIRV_CROSS_ENABLE_TESTS ON)
 endif()
 
+set(spirv-cross-glslang
+    ${CMAKE_CURRENT_BINARY_DIR}/third_party/glslang/StandAlone/glslangValidator)
+set(spirv-cross-spirv-as
+    ${CMAKE_CURRENT_BINARY_DIR}/third_party/spirv-tools/tools/spirv-as)
+set(spirv-cross-spirv-val
+    ${CMAKE_CURRENT_BINARY_DIR}/third_party/spirv-tools/tools/spirv-val)
+set(spirv-cross-spirv-opt
+    ${CMAKE_CURRENT_BINARY_DIR}/third_party/spirv-tools/tools/spirv-opt)
+
 add_subdirectory(${VKB_SPIRV_CROSS_SOURCE_DIR})
