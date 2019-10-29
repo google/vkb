@@ -18,5 +18,5 @@ message(STATUS "VKB SPIRV-Headers: ${VKB_SPIRV_HEADERS_SOURCE_DIR}")
 # now. We should fixup spirv-headers so this isn't an issue (currently
 # install-headers gets double exported)
 if (NOT ${VKB_BUILD_SHADERC})
-add_subdirectory(${VKB_SPIRV_HEADERS_SOURCE_DIR})
+  add_subdirectory(${VKB_SPIRV_HEADERS_SOURCE_DIR})
 endif()

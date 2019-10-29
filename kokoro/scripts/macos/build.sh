@@ -22,7 +22,7 @@ BUILD_TYPE=$1
 
 # Get ninja
 wget -q https://github.com/ninja-build/ninja/releases/download/v1.8.2/ninja-mac.zip
-unzip -q ninja-mac.zip
+unzip -qq ninja-mac.zip
 chmod +x ninja
 export PATH="$PWD:$PATH"
 

@@ -19,3 +19,6 @@ add_subdirectory(${VKB_VULKAN_HEADERS_SOURCE_DIR})
 # This is needed to keep the Mac build of the Vulkan-Loaders happy which
 # uses this source path in the CMake files.
 set(VulkanHeaders_INCLUDE_DIRS ${VKB_VULKAN_HEADERS_SOURCE_DIR}/include)
+
+# This is needed for the Vulkan Validation Layers build.
+set(VulkanHeaders_INCLUDE_DIR ${VulkanHeaders_INCLUDE_DIRS})

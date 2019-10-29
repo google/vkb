@@ -17,10 +17,11 @@ message(STATUS "VKB Vulkan-Loader: ${VKB_VULKAN_LOADER_SOURCE_DIR}")
 if(${CMAKE_SYSTEM_NAME} MATCHES "Android")
   message(STATUS "VKB Vulkan-Loader: Skipping on Android")
 else()
-  if (${VKB_BUILD_TESTS})
-    set(BUILD_TESTS ON)
+  if (${VKB_BUILD_TESTS} AND NOT MSVC)
+    set(BUILD_TESTS ON CACHE BOOL "Build test on")
   else()
-    set(BUILD_TESTS OFF)
+    set(BUILD_TESTS OFF CACHE BOOL "Build tests off")
+    message(STATUS "VKB Vulkan-Loader: Disabling tests")
   endif()
 
   # The Vulkan-Loader CMake file assumes that this directory exists if
@@ -31,6 +32,8 @@ else()
   endif()
   message(STATUS "VKB: Disabling X11 support in Vulkan-Loader")
   set(BUILD_WSI_XLIB_SUPPORT OFF CACHE BOOL "" FORCE)
+
+  set(VK_LOADER_SKIP_WDK ON CACHE BOOL "skip wdk")
 
   add_subdirectory(${VKB_VULKAN_LOADER_SOURCE_DIR})
 endif()

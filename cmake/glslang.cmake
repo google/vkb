@@ -15,16 +15,16 @@
 message(STATUS "VKB Glslang: ${VKB_GLSLANG_SOURCE_DIR}")
 
 if (${VKB_BUILD_TESTS})
-  set(BUILD_TESTING ON)
+  set(BUILD_TESTING ON CACHE BOOL "glslang tests off")
 else()
-  set(BUILD_TESTING OFF)
+  set(BUILD_TESTING OFF CACHE BOOL "glslang tests on")
 endif()
 
-set(ENABLE_HLSL ON)
-set(ENABLE_GLSLANG_BINARIES ON)
+set(ENABLE_HLSL ON CACHE BOOL "Glslang HLSL on")
+set(ENABLE_GLSLANG_BINARIES ON CACHE BOOL "glslang enable binaries")
 
 if (${VKB_BUILD_SPIRV_TOOLS})
-  set(ENABLE_OPT ON)
+  set(ENABLE_OPT ON CACHE BOOL "Glslang enable spirv-tools")
 endif()
 
 # TODO(dsinclair): The install target of glslang will put the SPIRV/ folder

@@ -15,9 +15,9 @@
 message(STATUS "VKB SPIRV-Cross: ${VKB_SPIRV_CROSS_SOURCE_DIR}")
 
 if (${VKB_BUILD_TESTS})
-  set(SPIRV_CROSS_ENABLE_TESTS ON)
+  set(SPIRV_CROSS_ENABLE_TESTS ON CACHE BOOL "Spirv-cross tests on")
 else()
-  set(SPIRV_CROSS_ENABLE_TESTS ON)
+  set(SPIRV_CROSS_ENABLE_TESTS ON CACHE BOOL "spirv-cross tests off")
 endif()
 
 set(spirv-cross-glslang

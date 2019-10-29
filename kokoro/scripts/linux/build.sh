@@ -48,7 +48,7 @@ echo y | sudo apt-get purge --auto-remove cmake
 
 # Installing the 3.10.2 version
 wget http://www.cmake.org/files/v3.10/cmake-3.10.2.tar.gz
-tar -xvzf cmake-3.10.2.tar.gz
+tar -xzf cmake-3.10.2.tar.gz
 cd cmake-3.10.2/
 ./configure
 make

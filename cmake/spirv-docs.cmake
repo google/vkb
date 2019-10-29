@@ -14,9 +14,9 @@
 
 message(STATUS "VKB SPIRV-Docs")
 
-SET(SPEC_DIR ${CMAKE_CURRENT_BINARY_DIR}/third_party/spirv-docs)
-SET(SPEC ${SPEC_DIR}/SPIRV.html)
-SET(SPV_FILES https://www.khronos.org/registry/spir-v/specs/unified1/SPIRV.html)
+set(SPEC_DIR ${CMAKE_CURRENT_BINARY_DIR}/third_party/spirv-docs)
+set(SPEC ${SPEC_DIR}/SPIRV.html)
+set(SPV_FILES https://www.khronos.org/registry/spir-v/specs/unified1/SPIRV.html)
 
 add_custom_command(
   OUTPUT ${SPEC}

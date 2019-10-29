@@ -18,9 +18,9 @@ set(SPIRV-Headers_SOURCE_DIR ${VKB_SPIRV_HEADERS_SOURCE_DIR})
 set(SPIRV_WERROR OFF CACHE BOOL "build spirv-tools with errors")
 
 if (${VKB_BUILD_TESTS})
-  set(SPIRV_SKIP_TESTS OFF)
+  set(SPIRV_SKIP_TESTS OFF CACHE BOOL "spirv-tools tests off")
 else()
-  set(SPIRV_SKIP_TESTS ON)
+  set(SPIRV_SKIP_TESTS ON CACHE BOOL "Spirv-tools tests on")
 endif()
 
 add_subdirectory(${VKB_SPIRV_TOOLS_SOURCE_DIR})

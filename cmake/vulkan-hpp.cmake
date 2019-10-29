@@ -21,7 +21,9 @@ set(VULKAN_HPP_GLSLANG_SRC_DIR "${VKB_GLSLANG_SOURCE_DIR}")
 
 # TODO(dsinclair) This uses FindPackage(Vulkan) which may use the cmake version
 # which will fail if VULKAN_SDK is not set.
-set(TESTS_BUILD OFF)
-set(SAMPLES_BUILD OFF)
+set(TESTS_BUILD OFF CACHE BOOL "hpp tests off")
+message(STATUS "VKB Vulkan-Hpp: Disable tests")
+
+set(SAMPLES_BUILD OFF CACHE BOOL "hpp samples off")
 
 add_subdirectory(${VKB_VULKAN_HPP_SOURCE_DIR})

@@ -19,8 +19,8 @@ find_program(ASCIIDOCTOR asciidoctor)
 if (NOT ASCIIDOCTOR)
   message(STATUS "VKB Vulkan-Docs: asciidoctor not found, skipping")
 else()
-  SET(SPEC ${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-docs/html/vkspec.html)
-  SET(KATEX ${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-docs/katex)
+  set(SPEC ${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-docs/html/vkspec.html)
+  set(KATEX ${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-docs/katex)
 
   add_custom_command(
     OUTPUT ${SPEC}
