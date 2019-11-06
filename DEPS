@@ -16,11 +16,11 @@ vars = {
   'spirv_headers_revision': 'af64a9e826bf5bb5fcd2434dd71be1e41e922563',
   'spirv_tools_revision': '6a9be627c760cf1efa43d155d4e6ee5e801deba3',
   'tinyxml2_revision': 'ff61650517cc32d524689366f977716e73d4f924',
-  'vulkan_docs_revision': 'a5b10770a313a4b1fcf74645c6041c6090630085',
-  'vulkan_headers_revision': '5bc459e2921304c32568b73edaac8d6df5f98b84',
-  'vulkan_hpp_revision': '65af859e4ded880c90876b3360456657ef1179fa',
-  'vulkan_loader_revision': '6b804caab51f1d0868f41bcf1d4fef366f3ced7c',
-  'vulkan_validation_layers_revision': 'e72895bb5b17b6fb2426d10454da9cb51b86d667',
+  'vulkan_docs_revision': 'fa497b29d87078e1fee7372e369e9a1a788d6358',
+  'vulkan_headers_revision': 'f3128cf6eaffeef6493b36dbfff732a249528bf7',
+  'vulkan_hpp_revision': 'fe0c9e1c14ff09f56788250b6635eea7fa024d22',
+  'vulkan_loader_revision': '81e965357555eee1a07af512824cfc1e5dd42173',
+  'vulkan_validation_layers_revision': 'f234bf87645f3a799e12d39945fe0361fe1e3fa5',
 }
 
 deps = {
