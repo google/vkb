@@ -15,9 +15,15 @@
 message(STATUS "VKB Vulkan-Hpp: ${VKB_VULKAN_HPP_SOURCE_DIR}")
 
 set(VULKAN_HPP_VULKAN_HEADERS_SRC_DIR "${VKB_VULKAN_HEADERS_SOURCE_DIR}")
+set(VULKAN_HPP_PATH "${CMAKE_CURRENT_BINARY_DIR}/third_party/vulkan-hpp")
 set(VULKAN_HPP_TINYXML2_SRC_DIR "${VKB_TINYXML2_SOURCE_DIR}")
-set(VULKAN_HPP_GLM_SRC_DIR "${VKB_GLM_SOURCE_DIR}")
-set(VULKAN_HPP_GLSLANG_SRC_DIR "${VKB_GLSLANG_SOURCE_DIR}")
+
+if (ANDROID)
+  set(VULKAN_HPP_RUN_GENERATOR OFF CACHE BOOL "vulkan-hpp disable generator")
+  message(STATUS "VKB Vulkan-Hpp: Disable generator on Android")
+elseif()
+  set(VULKAN_HPP_RUN_GENERATOR ON CACHE BOOL "vulkan-hpp run generator")
+endif()
 
 # TODO(dsinclair) This uses FindPackage(Vulkan) which may use the cmake version
 # which will fail if VULKAN_SDK is not set.

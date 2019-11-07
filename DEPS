@@ -18,7 +18,7 @@ vars = {
   'tinyxml2_revision': 'ff61650517cc32d524689366f977716e73d4f924',
   'vulkan_docs_revision': 'fa497b29d87078e1fee7372e369e9a1a788d6358',
   'vulkan_headers_revision': 'f3128cf6eaffeef6493b36dbfff732a249528bf7',
-  'vulkan_hpp_revision': 'fe0c9e1c14ff09f56788250b6635eea7fa024d22',
+  'vulkan_hpp_revision': '10aa543b7e30a931b9cb4fb87d988c6abb268263',
   'vulkan_loader_revision': '81e965357555eee1a07af512824cfc1e5dd42173',
   'vulkan_validation_layers_revision': 'f234bf87645f3a799e12d39945fe0361fe1e3fa5',
 }
