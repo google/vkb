@@ -7,20 +7,20 @@ vars = {
   'khronos_git': 'https://github.com/KhronosGroup',
 
   'effcee_revision': '98980e2b785403b5f43c23ed5a81e1a22e7297e8',
-  'glm_revision': '338bdead4830632778d1a344b1dc0f574e89d700',
-  'glslang_revision': '5d0e01d9e7f9fae7609843d00f9fc5f41c3ddfdd',
-  'googletest_revision': '8697709e0308af4cd5b09dc108480804e5447cf0',
+  'glm_revision': '7eb810be81c4d584a068e50431f6de7b6fee451f',
+  'glslang_revision': 'e471df3c9154afbf125838201d2cd36cd6bdc708',
+  'googletest_revision': 'e08a4602778b3cbea36dbd53724db0f18840e274',
   're2_revision': 'eecfdbf1701dd7ebad2f28b9965ca09e0bfb45b0',
-  'shaderc_revision': '2dfba53b8214b6776606900fa4f8b25ee4a838ca',
-  'spirv_cross_revision': '7b380a68d62c6453a051a2786f31e92d43aac6bb',
+  'shaderc_revision': '76ee91e12642e2be731aac3f0f21401b0e7d9d16',
+  'spirv_cross_revision': 'cb73115bcc0f8d4e3ba9d7b2b3b6fe8d9542e084',
   'spirv_headers_revision': 'af64a9e826bf5bb5fcd2434dd71be1e41e922563',
-  'spirv_tools_revision': 'd9fbf0234869c4dda0bbe70e04f8f31d86c55ee5',
+  'spirv_tools_revision': '528c00c0167c0c6a9cb1da7dc5f80bba444813aa',
   'tinyxml2_revision': 'ff61650517cc32d524689366f977716e73d4f924',
   'vulkan_docs_revision': 'fa497b29d87078e1fee7372e369e9a1a788d6358',
-  'vulkan_headers_revision': 'f3128cf6eaffeef6493b36dbfff732a249528bf7',
-  'vulkan_hpp_revision': '10aa543b7e30a931b9cb4fb87d988c6abb268263',
-  'vulkan_loader_revision': '81e965357555eee1a07af512824cfc1e5dd42173',
-  'vulkan_validation_layers_revision': 'f234bf87645f3a799e12d39945fe0361fe1e3fa5',
+  'vulkan_headers_revision': 'd42d0747ee1b7a6726fb8948444b4993f9dcd2e5',
+  'vulkan_hpp_revision': '581b7cb2276124fde9abe6a5819ca9c9ba3fba01',
+  'vulkan_loader_revision': 'd24b204e0f31da65ac4463bd2a436ec9dae16d16',
+  'vulkan_validation_layers_revision': '5f4e56ed2b501a0fca89475f554bc0a1044c6c71',
 }
 
 deps = {
@@ -71,3 +71,4 @@ deps = {
   'third_party/vulkan-validationlayers': Var('khronos_git') + '/Vulkan-ValidationLayers.git@' +
       Var('vulkan_validation_layers_revision'),
 }
+
