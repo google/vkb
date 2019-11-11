@@ -8,19 +8,19 @@ vars = {
 
   'effcee_revision': '98980e2b785403b5f43c23ed5a81e1a22e7297e8',
   'glm_revision': '7eb810be81c4d584a068e50431f6de7b6fee451f',
-  'glslang_revision': 'e471df3c9154afbf125838201d2cd36cd6bdc708',
-  'googletest_revision': 'e08a4602778b3cbea36dbd53724db0f18840e274',
-  're2_revision': 'eecfdbf1701dd7ebad2f28b9965ca09e0bfb45b0',
-  'shaderc_revision': 'f7e05c734266528849e861da7bee3ac734df80e6',
-  'spirv_cross_revision': 'cb73115bcc0f8d4e3ba9d7b2b3b6fe8d9542e084',
+  'glslang_revision': 'f34cdc70ca1b4e741a9ea5a906f86d3593623356',
+  'googletest_revision': 'd5707695cb020ace53dc35f30dd1c3f463daf98e',
+  're2_revision': 'af3455996c0213fa030546eeba0cc44b947b1de8',
+  'shaderc_revision': 'f0bfbce62d427c755b767aa09e306346189d7c22',
+  'spirv_cross_revision': '0b95cbdea394753137537e41d55e6795e5d14dac',
   'spirv_headers_revision': 'af64a9e826bf5bb5fcd2434dd71be1e41e922563',
-  'spirv_tools_revision': '041f0a02493d2c6fcc0148b0c1d397492dfe0084',
+  'spirv_tools_revision': '3e4abc9ac382b6fc7a88316a700652404b6fb9f7',
   'tinyxml2_revision': 'ff61650517cc32d524689366f977716e73d4f924',
-  'vulkan_docs_revision': 'fa497b29d87078e1fee7372e369e9a1a788d6358',
+  'vulkan_docs_revision': '39a7dd04672a950a78c4271ce41b07cb5a1ef194',
   'vulkan_headers_revision': 'd42d0747ee1b7a6726fb8948444b4993f9dcd2e5',
   'vulkan_hpp_revision': '581b7cb2276124fde9abe6a5819ca9c9ba3fba01',
   'vulkan_loader_revision': 'd24b204e0f31da65ac4463bd2a436ec9dae16d16',
-  'vulkan_validation_layers_revision': '5f4e56ed2b501a0fca89475f554bc0a1044c6c71',
+  'vulkan_validation_layers_revision': '2a8bc25997c95ab6319201a5295776bfa9264378',
 }
 
 deps = {
