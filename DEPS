@@ -17,6 +17,7 @@ vars = {
   'spirv_tools_revision': 'ab3cdcaef56e9311f299eebfd044f9646100c9dc',
   'tinyxml2_revision': 'ff61650517cc32d524689366f977716e73d4f924',
   'vulkan_docs_revision': '39a7dd04672a950a78c4271ce41b07cb5a1ef194',
+  'vulkan_guide_revision': '652ad097109eb3b1a5382e3018e3db813b2349ad',
   'vulkan_headers_revision': 'd42d0747ee1b7a6726fb8948444b4993f9dcd2e5',
   'vulkan_hpp_revision': 'e850963599fb17cbb7576befe55bc7b3c9997584',
   'vulkan_loader_revision': 'd24b204e0f31da65ac4463bd2a436ec9dae16d16',
@@ -58,6 +59,9 @@ deps = {
 
   'third_party/vulkan-docs': Var('khronos_git') + '/Vulkan-Docs.git@' +
       Var('vulkan_docs_revision'),
+
+  'third_party/vulkan-guide': Var('khronos_git') + '/Vulkan-Guide.git@' +
+      Var('vulkan_guide_revision'),
 
   'third_party/vulkan-headers': Var('khronos_git') + '/Vulkan-Headers.git@' +
       Var('vulkan_headers_revision'),
