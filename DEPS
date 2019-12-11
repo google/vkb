@@ -8,20 +8,20 @@ vars = {
 
   'effcee_revision': '98980e2b785403b5f43c23ed5a81e1a22e7297e8',
   'glm_revision': '8828c3f1fd05e173d94417ca4565aa634dabb1c1',
-  'glslang_revision': 'ff61c18f1bbc0c5f2a5f2b327db142fbc74a6b3d',
+  'glslang_revision': '6c479796f6e4a6fa86ca4d25212ae1284c92fef5',
   'googletest_revision': '78fdd6c00b8fa5dd67066fbb796affc87ba0e075',
   're2_revision': '6a86f6b3f4a6d797886cd4cf6bca73ed25b2d00a',
-  'shaderc_revision': 'eec373d9e7a4bf9fa0144e05e312a901dd27b085',
-  'spirv_cross_revision': '363035c79828a79d3980cedcce4109434af93b33',
+  'shaderc_revision': '2fc6bac865f419e8d60df9ec5aa70cff9ee4d431',
+  'spirv_cross_revision': 'f912c32898dbf558635c9d5a2d50ff887c1402ae',
   'spirv_headers_revision': '204cd131c42b90d129073719f2766293ce35c081',
-  'spirv_tools_revision': '983b5b4fccea17cab053de24d51403efb4829158',
+  'spirv_tools_revision': '00ca4e5bdfdb759ddb75d1ccda93c432c29855d1',
   'tinyxml2_revision': 'ff61650517cc32d524689366f977716e73d4f924',
   'vulkan_docs_revision': '86113f72290ca5998fcae798ee180bf587eca2a0',
   'vulkan_guide_revision': '18276f29232d8b03c93b7730c28b543d81e11a58',
   'vulkan_headers_revision': '0e57fc1cfa56a203efe43e4dfb9b3c9e9b105593',
   'vulkan_hpp_revision': '3f82338d9feee393f41dfdabed985bacb555efff',
-  'vulkan_loader_revision': '6ec1838ba00f186161b72d7d72c144c14e620792',
-  'vulkan_validation_layers_revision': 'f34b9fb086b33d1bbc8d5262eb1fb2e86514f6dd',
+  'vulkan_loader_revision': '1830f45ee904b685a6f8c7137409890df9f349f8',
+  'vulkan_validation_layers_revision': '49cc6797ad3393b6ba5412f900563961090e8b20',
 }
 
 deps = {
