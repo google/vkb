@@ -22,6 +22,7 @@ vars = {
   'vulkan_hpp_revision': '9514dde9984ead82f67bd436e20a5522360ec3b6',
   'vulkan_loader_revision': 'c357af84c7cb3de7bd2dfcd68212fd213eeea802',
   'vulkan_validation_layers_revision': '6112b121e1043655a6d576d06056e4f3fbc3b239',
+  'vulkan_extensionlayer': '967c3560eea0fe48d90eb1c8e5e211c67c8471f9',
 }
 
 deps = {
@@ -74,5 +75,8 @@ deps = {
 
   'third_party/vulkan-validationlayers': Var('khronos_git') + '/Vulkan-ValidationLayers.git@' +
       Var('vulkan_validation_layers_revision'),
+
+  'third_party/vulkan-extensionlayer': Var('khronos_git') + '/Vulkan-ExtensionLayer.git@' +
+      Var('vulkan_extensionlayer'),
 }
 
