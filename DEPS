@@ -14,7 +14,7 @@ vars = {
   'shaderc_revision': '738f1655a7bbaec8d9302b9c3daefa7109117649',
   'spirv_cross_revision': 'f19fdb94d7b8b681024b2f3e87ccbc8d60be1d97',
   'spirv_headers_revision': '5dbc1c32182e17b8ab8e8158a802ecabaf35aad3',
-  'spirv_tools_revision': '79f8caf9154a0328a87424354bd10ab69e811185',
+  'spirv_tools_revision': 'e1688b60caf77e7efd9e440e57cca429ca7c5a1e',
   'tinyxml2_revision': 'ff61650517cc32d524689366f977716e73d4f924',
   'vulkan_docs_revision': '3fe259531ff0493ed9915bdb9ce6340bb5714230',
   'vulkan_guide_revision': '61942ff776d2ef94c3afc12eb09ed8169bcbc8c0',
