@@ -8,7 +8,7 @@ vars = {
 
   'effcee_revision': '2ec8f8738118cc483b67c04a759fee53496c5659',
   'glm_revision': '23e0701c0483283440d4d1bcd17eb7070fa8eb75',
-  'glslang_revision': 'ba17d8bcf0dcf2c0c27e1537e72dfdd12a36d1d0',
+  'glslang_revision': '29c9135d06f12628e3161e4aa751610c5941d8d6',
   'googletest_revision': '356f2d264a485db2fcc50ec1c672e0d37b6cb39b',
   're2_revision': 'fe8a81adc2ef24b99d44fb87e882d7f2cd504b91',
   'shaderc_revision': '1402ed576596f53eaf3f8d390a9e1defbeffd014',

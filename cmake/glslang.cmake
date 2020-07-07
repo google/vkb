@@ -20,7 +20,6 @@ else()
   set(BUILD_TESTING OFF CACHE BOOL "glslang tests on")
 endif()
 
-set(GLSLANG_BUILD_PIC 1)
 set(ENABLE_HLSL ON CACHE BOOL "Glslang HLSL on")
 set(ENABLE_GLSLANG_BINARIES ON CACHE BOOL "glslang enable binaries")
 
