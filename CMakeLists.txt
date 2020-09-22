@@ -98,9 +98,9 @@ set(VKB_VULKAN_EXTENSION_LAYER_SOURCE_DIR "${VKB_THIRD_PARTY}/vulkan-extensionla
 find_package(PythonInterp 3 REQUIRED)
 message(STATUS "VKB using Python3")
 
-message(STATUS "VKB enable testing: ${VKB__BUILD_TESTS}")
+message(STATUS "VKB enable testing: ${VKB_BUILD_TESTS}")
 message(STATUS "VKB enable SPIRV-Docs: ${VKB_BUID_SPIRV_DOCS}")
-message(STATUS "VKB enable SPIRV-Headers: ${VKB__BUILD_SPIRV_HEADERS}")
+message(STATUS "VKB enable SPIRV-Headers: ${VKB_BUILD_SPIRV_HEADERS}")
 message(STATUS "VKB enable SPIRV-Tools: ${VKB_BUILD_SPIRV_TOOLS}")
 message(STATUS "VKB enable SPIRV-Cross: ${VKB_BUILD_SPIRV_CROSS}")
 message(STATUS "VKB enable GLSLang: ${VKB_BUILD_GLSLANG}")
